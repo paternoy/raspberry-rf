@@ -8,7 +8,7 @@
 from pi_switch import RCSwitchReceiver
 
 receiver = RCSwitchReceiver()
-receiver.enableReceive(0)
+receiver.enableReceive(1)
 
 num = 0
 
