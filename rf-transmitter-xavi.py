@@ -1,11 +1,11 @@
 import pi_switch
 import time
 sender = pi_switch.RCSwitchSender()
-sender.enableTransmit(2) # use WiringPi pin 0
-codes=[20,16404,4116]
+sender.enableTransmit(0) # use WiringPi pin 0
+codes=[20,16404,4116,4194324]
 bit=3
 
-for i in range(0,3):
+for i in range(0,4):
 	code=codes[i]
 	codeOn=code|2**bit
 	codeOff=code&~2**bit
