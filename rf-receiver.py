@@ -6,7 +6,10 @@
 """
 
 from pi_switch import RCSwitchReceiver
-
+import RPi.GPIO as GPIO
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(17,GPIO.OUT)
+GPIO.output(17,False)
 receiver = RCSwitchReceiver()
 receiver.enableReceive(1)
 
