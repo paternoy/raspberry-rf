@@ -14,9 +14,10 @@
 * Botó: GPIO22
 
 ###Enllaços
-With Arduino:
+* Amb Arduino:
 https://github.com/sui77/rc-switch
-With Raspberry:
+* Amb Raspberry:
 https://github.com/lexruee/pi-switch-python
+* Com crear una antena:
 http://www.instructables.com/id/433-MHz-Coil-loaded-antenna/
 
