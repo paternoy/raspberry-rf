@@ -11,7 +11,8 @@
 * Led vermell: GPIO24
 * Led verd: GPIO25
 * Led blau: GPIO23
-* Bot�: GPIO22  
+* Botó: GPIO22
+
 ###Enllaços
 With Arduino:
 https://github.com/sui77/rc-switch
