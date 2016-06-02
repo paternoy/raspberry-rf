@@ -58,11 +58,11 @@ def post():
 if __name__ == '__main__':
   try:
     loadConfig()
-    logging.basicConfig(level=logging.DEBUG)
+    logging.basicConfig(level=logging.INFO)
     logging.info('Initializing...')
     log = logging.getLogger('werkzeug')
     log.setLevel(logging.ERROR)
-    app.run(host='0.0.0.0',port=80,debug=True)
+    app.run(host='0.0.0.0',port=80,debug=False)
   except KeyboardInterrupt:
     rfShield.cleanup()
   finally:
