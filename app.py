@@ -6,9 +6,8 @@ import json
 import threading
 import logging
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='')
 rfShield = RFShield()
-#switches =[{"id":0,"name":"Lamp 1","onCode":21,"offCode":20},{"id":1,"name":"Lamp 2","onCode":16405,"offCode":16404},{"id":2,"name":"Lamp 3","onCode":4117,"offCode":4116}]
 switches=[]
 def loadConfig():
   with open('config.json', 'r') as f:
@@ -24,7 +23,7 @@ def loadConfig():
 
 @app.route('/')
 def index():
-  return redirect(url_for('static', filename='index.html'))
+  return app.send_static_file('index.html')
 
 @app.route('/api/switches',methods=['GET'])
 def getSwitches():
